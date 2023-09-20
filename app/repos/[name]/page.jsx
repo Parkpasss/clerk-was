@@ -1,4 +1,5 @@
 import Repo from '@/components/Repo'
+import RepoDirs from '@/components/RepoDirs'
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,10 +10,11 @@ const RepoPage = ({ params: { name } }) => {
         href="/repos"
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
       >
-        Back to Repositories
+        돌아가기
       </Link>
 
       <Repo name={name} />
+      <RepoDirs name={name} />
     </div>
   )
 }
